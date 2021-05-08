@@ -19,7 +19,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
       alert(json.error);
       return;
     }
-    console.log(json);
+    
 
     localStorage.setItem("idUser", json.usuario._id);
 
