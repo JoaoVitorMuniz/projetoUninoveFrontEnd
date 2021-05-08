@@ -1,0 +1,18 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background: var(--background-color-secondary);
+}
+
+:root {
+  --background-color-primary: #fff;
+  --background-color-secondary: #cfcfcf;
+}
