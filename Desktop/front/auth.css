@@ -20,9 +20,9 @@ input {
   margin: 1rem 0;
   display: block;
   width: 100%;
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
   border: none;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
   outline: none;
 }
 
@@ -42,6 +42,9 @@ button {
 }
 
 a {
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
+  font-size: 0.8rem;
+  color: rgb(110, 130, 221);
   margin-top: 1rem;
 }
