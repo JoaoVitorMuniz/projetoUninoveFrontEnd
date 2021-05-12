@@ -5,7 +5,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     const pass = document.getElementById("pass").value;
     const body = JSON.stringify({ email, senha: pass });
 
-    const result = await fetch("http://localhost:4000/login", {
+    const result = await fetch("https://spacesecret.herokuapp.com/login", {
       method: "POST",
       body,
       headers: {

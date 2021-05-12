@@ -9,7 +9,7 @@ document.getElementById('postagem').addEventListener('submit', async(p)=>{
 
         const body = JSON.stringify({titulo,imagem,desc})
         console.log(body)
-        const result = await fetch("http://localhost:4000/post",{
+        const result = await fetch("https://spacesecret.herokuapp.com/post",{
             method: "POST",
             body: body,
             headers: {

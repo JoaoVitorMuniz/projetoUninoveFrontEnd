@@ -1,7 +1,7 @@
 async function fetchPosts() {
   const list = document.getElementById("list");
 
-  const result = await fetch("http://localhost:4000/post");
+  const result = await fetch("https://spacesecret.herokuapp.com/post");
   const json = await result.json();
   json.post.map((urso) => {
     const item = `
@@ -23,7 +23,7 @@ fetchPosts();
 
 async function fetchPost(id) {
   try {
-    const result = await fetch(`http://localhost:4000/post/${id}`);
+    const result = await fetch(`https://spacesecret.herokuapp.com/post/${id}`);
     console.log(result);
     if (!result.ok) {
       alert("Post Indisponível");
@@ -56,7 +56,7 @@ function modal(titulo, desc, imagem,_id) {
 
 async function deletPost (id){
   
-  const result = await fetch("http://localhost:4000/post/" + id , {
+  const result = await fetch("https://spacesecret.herokuapp.com/post/" + id , {
      method: "delete",
      headers: {
          "Authorization": localStorage.getItem("idUser")     

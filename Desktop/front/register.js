@@ -8,7 +8,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
 
     const body = JSON.stringify({ nome: name, email, senha: pass });
 
-    const result = await fetch("http://localhost:4000/registro", {
+    const result = await fetch("https://spacesecret.herokuapp.com//registro", {
       method: "POST",
       body: body,
       headers: {
