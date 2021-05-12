@@ -27,7 +27,7 @@ document.getElementById('postagem').addEventListener('submit', async(p)=>{
             alert(json.error);
             return;
         }
-     
+        location.href = "index.html"
      }catch(err){
 
         console.log(err)

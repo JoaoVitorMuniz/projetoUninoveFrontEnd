@@ -31,18 +31,19 @@ async function fetchPost(id) {
 
     const json = await result.json();
 
-    modal(json.post.titulo, json.post.desc, json.post.imagem);
+    modal(json.post.titulo, json.post.desc, json.post.imagem,json.post._id);
   } catch (err) {
     console.log(err);
   }
 }
 
-function modal(titulo, desc, imagem) {
+function modal(titulo, desc, imagem,_id) {
   document.getElementById("modalContainer").innerHTML = `
   <div class="hero-img" style="background-image: url('${imagem}')"></div>
   <div class="content">
     <h1>${titulo}</h1>
     <p>${desc}</p>
+    <button id="btnDeletar" onclick="deletPost('${_id}')"><img src="src/trash.svg"/></button>
     <button id="btnCloseModal">X</button>
   </div>
   `;
@@ -51,4 +52,20 @@ function modal(titulo, desc, imagem) {
   document.getElementById("btnCloseModal").addEventListener("click", () => {
     document.getElementById("modalContainer").style.display = "none";
   });
+}
+
+async function deletPost (id){
+  
+  const result = await fetch("http://localhost:4000/post/" + id , {
+     method: "delete",
+     headers: {
+         "Authorization": localStorage.getItem("idUser")     
+     }
+   })
+   if(!result.ok){
+       alert("Sem Permissao");
+       return;
+   }
+   
+   location.href = "index.html"
 }

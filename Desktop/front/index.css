@@ -124,7 +124,6 @@ header button {
 
 #modalContainer .content button {
   position: absolute;
-  top: 0;
   right: 0;
   margin-right: 20px;
   margin-top: 20px;
@@ -134,4 +133,18 @@ header button {
   border: none;
   font-size: 2rem;
   cursor: pointer;
+}
+
+#modalContainer .content #btnDeletar {
+
+   bottom: 0;
+}
+#modalContainer .content #btnCloseModal{
+
+  top: 0;
+
+}
+#modalContainer .content #btnDeletar img {
+
+  width: 30px;
 }

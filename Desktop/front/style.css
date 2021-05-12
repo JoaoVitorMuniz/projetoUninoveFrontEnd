@@ -9,12 +9,12 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(65deg, rgba(131, 58, 180, 1) 0%, rgba(69, 134, 252, 1) 100%);
-
+  background: rgb(52, 48, 55);
 }
 
 :root {
   --background-color-primary: rgb(229, 229, 242);
   --background-color-secondary: #eff0f0;
 }
+
+
