@@ -67,5 +67,5 @@ async function deletPost (id){
        return;
    }
    
-   location.href = "index.html"
+   location.href = "home.html"
 }
