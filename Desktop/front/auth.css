@@ -50,10 +50,11 @@ a {
   color: rgb(110, 130, 221);
   margin-top: 1rem;
 }
+@import url('https://fonts.googleapis.com/css2?family=Six+Caps&display=swap');
 #titulo {
   position: absolute;
   top: 50px;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: 'Six Caps', sans-serif;
   color: #f2ff00;
   text-shadow: 0px 0px 5px #899CD5, 1px 1px 0 #8194CD, 2px 2px 0 #788BC4, 3px 3px 0 #6F82BB, 4px 4px 0 #677AB3, 5px 5px 0 #5E71AA, 6px 6px 0 #5568A1, 7px 7px 0 #4C5F98, 8px 8px 0 #445790, 9px 9px 0 #3B4E87, 10px 10px 0 #32457E, 11px 11px 0 #2A3D76, 12px 12px 0 #21346D, 2px 2px 2px rgba(206,89,55,0);
 }
