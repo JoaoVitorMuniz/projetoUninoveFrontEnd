@@ -78,6 +78,13 @@ header button {
     margin: 20px auto;
   }
 }
+a {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
 
 /* Modal */
 
