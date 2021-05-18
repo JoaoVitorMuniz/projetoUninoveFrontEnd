@@ -23,7 +23,7 @@ document.getElementById("form").addEventListener("submit", async (e) => {
     }
 
     localStorage.setItem("idUser", json.usuario._id);
-    location.href = "/home.html";
+    location.href = "home.html";
   } catch (err) {
     console.log(err);
   }
