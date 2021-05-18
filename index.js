@@ -43,7 +43,7 @@ function modal(titulo, desc, imagem,_id) {
   <div class="content">
     <h1>${titulo}</h1>
     <p>${desc}</p>
-    <button id="btnDeletar" onclick="deletPost('${_id}')"><img src="src/trash.svg"/></button>
+    <button id="btnDeletar" onclick="deletPost('${_id}')"><img src="trash.svg"/></button>
     <button id="btnCloseModal">X</button>
   </div>
   `;
