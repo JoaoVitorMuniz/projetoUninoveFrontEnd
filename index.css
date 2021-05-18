@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100%;
+  
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+header {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#az{
+
+  font-size: 20px;
+  color: wheat;
+  text-align: center;
+  margin: 30px;
+}
+#az:nth-child(3){
+  margin-right: 600px;
+}
+
+header button {
+  padding: 0.8rem;
+  margin-right: 2rem;
+  border: none;
+  background: #3eb9d8;
+  color: #fff;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.item {
+  margin: 20px;
+  width: 360px;
+  max-width: 100%;
+  height: 300px;
+}
+
+.item div {
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 20px black;
+}
+
+.item div .title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+}
+
+.item div:hover .title {
+  opacity: 1;
+}
+
+@media (max-width: 1335px) {
+  #az:nth-child(3){
+    margin-right: 20px;
+  }
+  .container {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container {
+    max-width: 500px;
+  }
+  .item {
+    margin: 20px auto;
+  }
+}
+
+/* Modal */
+
+#modalContainer {
+  position: relative;
+  z-index: 9999;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 90vw;
+  max-width: 1200px;
+  height: 90vh;
+  background: var(--background-color-secondary);
+
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 1px 20px black;
+
+  display: none;
+}
+
+#modalContainer .hero-img {
+  width: 60%;
+  background-position: center center;
+  background-size: cover;
+}
+
+#modalContainer .content {
+  flex: 1;
+  background: var(--background-color-secondary);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalContainer .content h1,
+#modalContainer .content p {
+  font-family: 'Roboto', sans-serif;
+  word-break: break-all;
+  text-align: center;
+  max-width: 90%;
+}
+
+#modalContainer .content button {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 0.8rem;
+  color: #494949;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#modalContainer .content #btnDeletar {
+
+   bottom: 0;
+}
+#modalContainer .content #btnCloseModal{
+
+  top: 0;
+
+}
+#modalContainer .content #btnDeletar img {
+
+  width: 30px;
+}
