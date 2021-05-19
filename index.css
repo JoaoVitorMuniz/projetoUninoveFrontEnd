@@ -32,7 +32,9 @@ header {
 #az:nth-child(3){
   margin-right: 600px;
 }
-
+p{
+  color: black;
+}
 header button {
   padding: 0.8rem;
   margin-right: 2rem;
