@@ -1,0 +1,11 @@
+Foi hospedado no githubpages
+link https://joaovitormuniz.github.io/projetoUninoveFrontEnd/
+
+
+
+Api no heroku
+
+https://spacesecret.herokuapp.com/post
+
+
+Banco de dados MongoDb
